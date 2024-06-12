@@ -1,0 +1,289 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E3FDFD;
+    color: #191970;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.menu {
+    background-color: #18A0FB;
+    color: #fff;
+    padding: 10px 0;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.menu ul li a:hover {
+    background-color: #191970;
+}
+.block {
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.block_contact{
+    background-color:#18A0FB;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.block_p1{
+    text-indent: 30px;
+}
+.block h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #191970;
+}
+.block p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #191970;
+    text-indent: 30px;
+}
+.image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.contact-info {
+display: flex;
+flex-wrap: wrap;
+}
+
+.contact-info p {
+width: calc(50% - 20px); /* Ширина элемента 50% минус отступы */
+margin-right: 20px;
+box-sizing: border-box;
+}
+
+/* Чтобы последний элемент в строке не имел правого отступа */
+.contact-info p:nth-child(2n) {
+margin-right: 0;
+}
+
+
+.form-container {
+    background-color: #CBF1F5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #191970;
+    margin-left: 32%;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 32%;
+    resize:none;
+}
+.form-container input[type="submit"] {
+    background-color: #18A0FB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 48%;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #191970;
+}
+.separator {
+    border-top: 2px solid #ccc;
+
+}
+.block-content {
+max-height: max-content; /* Максимальная высота блока */
+
+}
+
+.text-container {
+overflow: hidden; /* Скрытие текста, выходящего за пределы блока */
+overflow-wrap: break-word; /* Переносить текст на новую строку, если не помещается в блоке */
+
+}
+
+.block-content img {
+margin-right: 10px; /* Добавляем небольшой отступ между изображениями */
+}
+.teacher-info {
+display: flex; /* Устанавливаем элементы внутри блока в ряд */
+align-items: center; /* Выравниваем элементы по вертикали */
+}
+.teacher-info img {
+max-width: 30%;
+border-radius: 50px;
+}
+.teacher-details {
+margin-left: 20px; /* Добавляем небольшой отступ между изображением и информацией */
+}
+.concurs-row {
+display: flex;
+flex-wrap: wrap;
+}
+
+.concurs-item {
+width: calc(50% - 20px); /* Ширина элемента 50% минус отступы */
+margin-right: 20px;
+margin-bottom: 20px;
+box-sizing: border-box;
+}
+
+.concurs-info {
+display: flex;
+align-items: center; /* Выравниваем изображение и текст по вертикали */
+}
+
+.concurs-info img {
+max-width: 100%;
+height: auto;
+margin-right: 10px;
+}
+
+.concurs-info p {
+margin: 0;
+font-size: 16px;
+color: #191970;
+}
+.mywork {
+display: flex;
+align-items: center;
+margin-bottom: 20px; /* Добавляем отступ снизу для разделения записей */
+}
+
+.text-container {
+flex: 1; /* Занимает одну часть от двух доступной ширины */
+padding-right: 20px; /* Отступ между текстом и изображением */
+margin-left: 40px;
+}
+
+.image-container {
+flex: 1; /* Занимает одну часть от двух доступной ширины */
+text-align: right; /* Выравниваем фотографию по правому краю */
+border-radius: 30px;
+margin-left: 80px;
+}
+
+.image-container2 {
+    flex: 1; /* Занимает одну часть от двух доступной ширины */
+    text-align: center; /* Выравниваем фотографию по правому краю */
+    border-radius: 30px;
+    margin-left: 80px;
+    }
+
+.image {
+
+height: auto; /* Поддерживаем соотношение сторон */
+border-radius: 20px; /* Закругляем углы изображения */
+}
+
+
+.mywork:nth-child(odd) .text-container {
+order: 2; /* Меняем порядок, чтобы текст был справа для нечетных элементов */
+padding-right: 0; /* Убираем отступ справа для нечетных элементов */
+}
+
+.mywork:nth-child(odd) .image-container {
+order: 1; /* Меняем порядок, чтобы изображение было слева для нечетных элементов */
+text-align: left; /* Выравниваем изображение по левому краю для нечетных элементов */
+}
+.rps {
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+
+text-indent: 30px;
+}
+
+.head {
+margin-bottom: 10px;
+text-indent: 30px;
+}
+
+.photo1 {
+margin: 0 auto 10px; /* Устанавливаем автоматичесные отступы сверху и снизу, а по горизонтали - авто для центрирования */
+display: block; /* Чтобы применялись авто-отступы по горизонтали */
+text-align: center; /* Центрируем содержимое по горизонтали */
+}
+
+
+.info {
+margin-bottom: 10px;
+text-indent: 30px;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.text-photo2 {
+display: flex;
+flex-direction: row;
+text-align: left; /* Центрируем содержимое по горизонтали */
+margin: 0 auto;
+max-width: 600px;
+text-indent: 30px;
+}
+
+.text {
+    text-indent: 30px;
+margin-right: 10px;
+margin-bottom: 10px;
+align-items: left;
+margin-bottom: 10px;
+}
+
+.photo2 {
+margin-left: 10px;
+}
+
+.menu button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #fff; 
+color: #18A0FB;
+font-size: 16px;
+text-decoration: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+background-color: #191970; /* Изменение цвета при наведении */
+color: #fff;
+}

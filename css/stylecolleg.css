@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E3FDFD;
+    color: #191970;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.menu {
+    background-color: #18A0FB;
+    color: #fff;
+    padding: 10px 0;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.menu ul li a:hover {
+    background-color: #191970;
+}
+.block {
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.block_contact{
+    background-color:#18A0FB;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.block h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #191970;
+}
+.block p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #191970;
+    text-indent: 30px;
+}
+.image {
+    max-width: 30%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.contact-info {
+display: flex;
+flex-wrap: wrap;
+}
+
+.contact-info p {
+width: calc(50% - 20px); /* Ширина элемента 50% минус отступы */
+margin-right: 20px;
+box-sizing: border-box;
+}
+
+/* Чтобы последний элемент в строке не имел правого отступа */
+.contact-info p:nth-child(2n) {
+margin-right: 0;
+}
+
+
+.form-container {
+    background-color: #CBF1F5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #191970;
+    margin-left: 32%;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 32%;
+    resize:none;
+}
+.form-container input[type="submit"] {
+    background-color: #18A0FB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 48%;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #191970;
+}
+.separator {
+    border-top: 2px solid #ccc;
+}
+
+.block-content img {
+margin-right: 10px; /* Добавляем небольшой отступ между изображениями */
+}
+.block-content {
+display: flex; /* Использовать гибкий контейнер */
+flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
+}
+
+.rec-item {
+width: calc(50% - 10px); /* Ширина каждого элемента (50% минус отступы) */
+margin: 5px; /* Отступы между элементами */
+}
+
+.rec-item h2 {
+margin-top: 0; /* Убрать верхний отступ у заголовка */
+}
+
+.rec-item p {
+margin-bottom: 20px; /* Нижний отступ у абзаца */
+}
+.concurs-info img {
+max-width: 50%;
+height: auto;
+margin-right: 10px;
+}
+
+.concurs-info p {
+margin: 0;
+font-size: 16px;
+color: #191970;
+text-indent: 30px;
+}
+.block-content .games {
+display: inline-block;
+margin: 10px;
+text-align: center;
+}
+
+.block-content .games img {
+border-radius: 10px;
+width: 900px; /* Желаемая ширина */
+height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+.menu button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; 
+    color: #18A0FB; 
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+    .menu button:hover {
+    background-color: #191970; /* Изменение цвета при наведении */
+    color: #fff; 
+    }

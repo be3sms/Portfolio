@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="css/styleaboutme.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Веб-портфолио педагога</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="aboutme.html">Обо мне</a></li>
+                <li><a href="about.html">О моих воспитанниках</a></li>
+                <li><a href="parents.html">Родителям</a></li>
+                <li><a href="colleg.html">Коллегам</a></li>
+                  <li>
+                    <button onclick="scrollToElement('contact-info')">Контакты</button>
+                    <button onclick="scrollToElement('form-obr')">Обратная связь</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+<div class="container">
+    <!-- 1 блок - ФИО учителя, фото, биография -->
+    <div class="block">
+        <div class="teacher-info">
+            <img src="image/Фото_краски.jpg" alt="Фото1" class="image">
+            <div class="teacher-details">
+                <h2>Обо мне</h2>
+                <div class="block_p1"><p>Профессия педагога позволяет постоянно развиваться и обучаться новому. 
+                Ведь чтобы быть интересным и полезным для детей, нужно постоянно искать новые методы и подходы к обучению и воспитанию.</p></div>
+            </div>
+        </div>
+    </div>
+
+        <hr class="separator">
+
+<div class="block">
+    <h2>Моя деятельность</h2>
+
+    <div class="block-content">
+            <div class="mywork">
+                <div class="text-container">
+                    <p><strong>Проект “Участок нашей группы”</strong></p>
+                    <p>         Тип: социально-организованный проект.
+                        Цель: благоустройство и озеленение участка детского сада, создание комфортной зоны для осуществления экологического и нравственного воспитания дошкольников.</p>
+                        <p>Содержание: формируется развитие и совершенство развивающей предметно-пространственной среды на участке, что даёт возможность наблюдения, исследования и проведения опытов дошкольникам.</p>
+                </div>
+                <div class="image-container">
+                    <img src="image/Проект_Участок.png" width="700" alt="Фото проекта" class="image">
+                </div>
+            </div>
+
+            <div class="mywork">
+                <div class="text-container">
+                    <p><strong>Проект “Участок нашей группы”</strong></p>
+                    <p>         Тип: социально-организованный проект.
+                        Цель: благоустройство и озеленение участка детского сада, создание комфортной зоны для осуществления экологического и нравственного воспитания дошкольников.</p>
+                        <p>Содержание: формируется развитие и совершенство развивающей предметно-пространственной среды на участке, что даёт возможность наблюдения, исследования и проведения опытов дошкольникам.</p>
+                </div>
+                <div class="image-container2">
+                    <img src="image/Проект-Космос.jpg" width="1200" alt="Фото проекта" class="image">
+                </div>
+            </div>
+            <div class="mywork">
+                <div class="text-container">
+                    <p><strong>Проект “Участок нашей группы”</strong></p>
+                    <p>         Тип: социально-организованный проект.
+                        Цель: благоустройство и озеленение участка детского сада, создание комфортной зоны для осуществления экологического и нравственного воспитания дошкольников.</p>
+                        <p>Содержание: формируется развитие и совершенство развивающей предметно-пространственной среды на участке, что даёт возможность наблюдения, исследования и проведения опытов дошкольникам.</p>
+                </div>
+                <div class="image-container">
+                    <img src="image/Проект_Скоро_в_школу.jpg" width="900" alt="Фото проекта" class="image">
+                </div>
+            </div>
+    </div>
+</div>
+        <hr class="separator">
+<div class="block">
+    <h2>РПС моей группы</h2>
+
+    <div class="block-content">
+            <div class="rps">
+    <div class="head"> <p>Часть образовательной среды, представлена специально организованным пространством, материалами, оборудованием и т.д.</div>
+    <div class="photo1">
+        <img src="image/РППС.jpg" alt="Фото 1" class="image">
+        <img src="image/РППС_2.jpg" width="250" alt="Фото 2" class="image">
+    </div>
+
+    <div class="info"><p>Для развития детей дошкольного возраста в соответствии с 
+        особенностями каждого возрастного этапа, охраны и укрепления их здоровья, учёта особенностей 
+        и коррекции недостатков их развития, учёта гендерного развития детей.</p>
+        <p>РППС группы создана по принципам:
+            безопасная;                                    
+            многофункциональная;
+            изменяемая;
+            комплексная;
+            доступная;
+            вариативная;
+            информативная и понятная;
+            разнообразная.
+            Отвечает всем требованиям ФГОС ДО.</p></div>
+</div>
+    </div>
+</div>
+
+
+  <hr class="separator">
+
+       <!-- 5 блок - форма обратной связи -->
+       <div class="block form-container" id="form-obr">
+        <h2>Обратная связь</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="4ad3f8c9-2446-404f-82f5-cd176a3605ca">
+
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message" name="message" rows="4" cols="10" required></textarea><br><br>
+            <input type="submit" value="Отправить"><br>
+            <br><a margin="10%">Нажимая на кнопку, Вы соглашаетесь c <a href="https://www.zvezdochka10.ru/doc/2023/1.%20Политика%20оператора%20в%20отношении%20обработки%20ПДн.pdf">политикой обработки персональных данных.</a></a>
+        </form>
+    </div>
+    <hr class="separator">
+
+<!-- 6 блок - контактная информация -->
+<div class="block_contact" id="contact-info">
+<h2>Контактная информация</h2>
+<div class="contact-info">
+    <p>Телефон: +7 (8442) 36-55-90</p>
+    <p>Email: dou10@volgadmin.ru</p>
+    <p>Адрес: 400107, Россия, г. Волгоград, пр-кт им. Маршала Советского Союза Г.К. Жукова, 93</p>
+    <p>Сайт:  zvezdochka10.ru</p>
+</div>
+</div>
+<hr class="separator">
+     <p>&copy;Шатковский 2024 </p>
+</div>
+<script>
+    function scrollToElement(elementId) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+    }
+</script>
+</body>
+</html>
